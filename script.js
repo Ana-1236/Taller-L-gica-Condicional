@@ -180,3 +180,15 @@ function ejercicio_12() {
     }
 
 }
+
+function ejercicio_13() {
+    let nombreUsuario = prompt("Ingrese un nombre de usuario: ")
+    let contraseña = prompt("Ingrese una contraseña: ")
+    if (nombreUsuario === "admin" && contraseña === "1234") {
+        console.log("Acceso concedido.")
+    }
+    else {
+        console.log("Acceso denegado.")
+    }
+
+}

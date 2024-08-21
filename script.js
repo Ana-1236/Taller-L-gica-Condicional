@@ -129,3 +129,14 @@ function ejercicio_9() {
 
 }
 
+function ejercicio_10() {
+    let adivinaNumero = prompt("Adivina un número entre 1 y 10 : ")
+    let numeroAleatorio = Math.floor(Math.random() * 10) + 1
+    if (adivinaNumero == numeroAleatorio) {
+        console.log("¡Has acertado!")
+    }
+    else {
+        console.log("Intenta de nuevo")
+    }
+
+}

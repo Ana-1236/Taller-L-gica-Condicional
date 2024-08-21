@@ -112,3 +112,20 @@ function ejercicio_8() {
     }
 
 }
+
+function ejercicio_9() {
+    let ladoTriangulo1 = prompt("Ingrese el primer lado de un triángulo: ")
+    let ladoTriangulo2 = prompt("Ingrese el segundo lado de un triángulo: ")
+    let ladoTriangulo3 = prompt("Ingrese el tercer lado de un triángulo: ")
+    if (ladoTriangulo1 == ladoTriangulo2 == ladoTriangulo3) {
+        console.log("El triángulo es equilátero")
+    }
+    else if (ladoTriangulo1 === ladoTriangulo2 || ladoTriangulo2 === ladoTriangulo3 || ladoTriangulo3 === ladoTriangulo1) {
+        console.log("El triángulo es isósceles")
+    }
+    else {
+        console.log("El triángulo es escaleno")
+    }
+
+}
+

@@ -160,7 +160,7 @@ function ejercicio_11() {
 }
 
 function ejercicio_12() {
-    let ano = prompt('Ingresa un año')
+    let ano = prompt('Ingresa un año: ')
     function esBisiesto(anio) {
         if (anio % 4 === 0) {
             if (anio % 100 === 0) {
@@ -217,15 +217,68 @@ function ejercicio_15() {
 
     if (imc < 18.5) {
         console.log("Bajo peso");
-    } 
+    }
     else if (imc >= 18.5 && imc < 24.9) {
         console.log("Peso normal");
-    } 
-    else if (imc >= 25 && imc <+ 29.9) {
+    }
+    else if (imc >= 25 && imc < + 29.9) {
         console.log("Sobrepeso");
-    } 
+    }
     else {
         console.log("Obesidad");
-    } 
+    }
+
+}
+
+let numeroEjercicio = parseInt(prompt("Elije un ejercicio del 1 al 15: "))
+switch (numeroEjercicio) {
+    case 1:
+        ejercicio_1();
+        break;
+    case 2:
+        ejercicio_2();
+        break;
+    case 3:
+        ejercicio_3();
+        break;
+    case 4:
+        ejercicio_4();
+        break;
+    case 5:
+        ejercicio_5();
+        break;
+    case 6:
+        ejercicio_6();
+        break;
+    case 7:
+        ejercicio_7();
+        break;
+    case 8:
+        ejercicio_8();
+        break;
+    case 9:
+        ejercicio_9();
+        break;
+    case 10:
+        ejercicio_10();
+        break;
+    case 11:
+        ejercicio_11();
+        break;
+    case 12:
+        ejercicio_12();
+        break;
+    case 13:
+        ejercicio_13();
+        break;
+    case 14:
+        ejercicio_14();
+        break;
+    case 15:
+        ejercicio_15();
+        break;
+    default:
+        console.log("Opción no valida.")
+        break
 
 }
